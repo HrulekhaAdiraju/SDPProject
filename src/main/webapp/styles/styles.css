@@ -1,0 +1,67 @@
+/* Navbar Styles */
+.navbar {
+  padding: 15px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center; /* Center the navbar items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  position: relative; /* To position dropdown items */
+  margin-right: 30px; /* Space between the navbar items */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000; /* Black color for text */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-list a:hover {
+  color: #ff6b00; /* Orange color on hover */
+}
+
+/* Dropdown Styles */
+.dropdown .dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Below the dropdown button */
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  z-index: 1; /* Keep it above other elements */
+  min-width: 150px; /* Minimum width of dropdown */
+}
+
+.dropdown-content li {
+  margin: 0; /* Remove margin for dropdown items */
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 10px 20px;
+  display: block; /* Make links fill the dropdown space */
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+  color: #ff6b00; /* Orange text on hover */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
